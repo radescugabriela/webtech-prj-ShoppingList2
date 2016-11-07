@@ -1,1 +1,1 @@
-# webtech-prj-harta-turistica
+Proiectul include o harta a unui oras pentru a dezvalui cele mai frumoase obiective turistice din acel oras cu o descriere cat mai completa, oferte ale hotelurilor, pensiunilor si restaurantelor, pareri si discutii despre obiectiv.
