@@ -1,1 +1,1 @@
-Proiectul include o harta a unui oras pentru a dezvalui cele mai frumoase obiective turistice din acel oras cu o descriere cat mai completa, oferte ale hotelurilor, pensiunilor si restaurantelor, pareri si discutii despre obiectiv.
+Proiectul are rolul de crea si gestiona o lista de cumparaturi prin adaugarea si stergerea de produse in functie de categorie si calcularea sumei finale a tuturor cumparatorilor.
