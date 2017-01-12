@@ -1,0 +1,22 @@
+<div id="addContainer">
+        <div class="form-group"">
+             <form name="addForm">
+           <label for="productName">Product:</label>
+            <input type="text" class="form-control" name="productName" ng-model="list.product" required my-directive/>
+            
+            <label for="listCategory">Category</label>
+			<select class="form-control" id="listCategory" ng-model="list.productId" required>
+				<option ng-repeat="category in categories" value="{{category.productId}}">{{category.name}}</option>
+			</select>
+			
+			<label for="listQuantity">Quantity</label>
+			<input type="text" class="form-control" id="listQuantity" ng-model="list.quantity" required/>
+			
+			<label for="listPrice">Price</label>
+			<input type="text" class="form-control" id="listPrice" ng-model="list.price" required/>
+            
+             <label><input type="checkbox"> Checked</label>
+             </form>
+         </div>
+    <button type="button" class="btn .btn-success" ng-click="submit()">Submit</button>
+</div>

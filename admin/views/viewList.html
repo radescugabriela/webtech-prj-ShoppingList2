@@ -1,0 +1,46 @@
+ <div id="viewContainer">
+     <div id="viewListContainer"
+        <button type="button" class="btn btn-success btnview" ng-click="readRecords()">Here's the list</button> 
+        <br/>
+         <table id="lists" class="table table-bordered table-hover ">
+                     <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="list in lists">
+                            <td>{{list.product}</td>
+                            <td >{{list.category}}</td>
+                            <td>{{list.price}}</td>
+                        </tr>    
+                    </tbody>
+                    </table>
+</div>
+
+<br/>
+<br/>
+<div id="viewCategoryContainer">
+    <button type="button" class="btn btn-success btnview" ng-click="readCategories()">Display all products by category</button> 
+    <br/>
+     <table id="categoryTable" class="table table-bordered table-hover ">
+                     <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Items</th>
+                        </tr>
+                    </thead>
+                      <tbody>
+                        <tr ng-repeat="category in categories">
+                            <td><b>{{category.productId}}</b></td>
+                            <td><b>{{category.name}}</b></td>
+                            <td ng-repeat="list in category.Lists">{{list.product}</td>
+                        </tr>    
+                    </tbody>
+                    </table>
+</div>
+</div>
